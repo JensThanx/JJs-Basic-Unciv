@@ -6,7 +6,7 @@ Features (compared to normal UNCIV)
  * no cost for roads
  * slightly different techtree with fewer technologies overall
  * fast game pace
- * fewer units
+ * fewer unit types
  * early units are a bit stronger
  * much easier to conquer cities in early eras
  * ranged units need no setup
@@ -15,7 +15,7 @@ Features (compared to normal UNCIV)
 
 Planned timeframe:
  * create the repository, 04/2023 -- done
- * upload all files, until the end of 05/2023
+ * upload all files, until the end of 05/2023 --done
  * test the mod, until the end of 07/2023
  * make the mod available in UNCIV, until the end of 08/2023
 
