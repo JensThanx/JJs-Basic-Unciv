@@ -1,3 +1,0 @@
-# JJs Basic Unvic
-Full ruleset. Similar to the original game, but with reduced complexity. Should provide a rather fast and casual gameplay. 
-A few features: no religion, ranged units need no setting up, all policy trees available from the start, ...
