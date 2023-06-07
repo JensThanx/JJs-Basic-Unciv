@@ -1,0 +1,475 @@
+[
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles"],
+		"cost": 70
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city", 
+      "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Warrior",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 15,
+		"cost": 40,
+		"obsoleteTech": "Iron Working",
+		"upgradesTo": "Swordsman",
+		"uniques" : ["May upgrade to [Swordsman] through ruins-like effects"],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "This is your basic, club-swinging fighter."}
+		]
+	},
+	{
+		"name": "Brute",
+		"unitType": "Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 13,
+		"cost": 20,
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Swordsman",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 12,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Catapult",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Skirmisher",
+		"unitType": "Archery",
+		"uniqueTo": "Barbarians",
+		"replaces": "Archer",
+		"movement": 2,
+		"strength": 9,
+		"rangedStrength": 9,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Catapult",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 4,
+		"cost": 30,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Economics]>", 
+      "May create improvements on water resources", "Uncapturable"]
+	},
+	{
+		"name": "Trireme",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 20,
+		"cost": 45,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"upgradesTo": "Frigate",
+		"obsoleteTech": "Economics",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Galley",
+		"unitType": "Melee Water",
+		"uniqueTo": "Barbarians",
+		"movement": 3,
+		"strength": 15,
+		"cost": 40,
+		"uniques": ["Cannot enter ocean tiles"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Physics",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Spearman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 20,
+		"cost": 56,
+		"requiredTech": "Writing",
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Musketman",
+		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Marauder",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Barbarians",
+		"movement": 2,
+		"strength": 25,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Musketman",
+		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 25,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"upgradesTo": "Cavalry",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 17,
+		"rangedStrength": 17,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Chemistry",
+		"upgradesTo": "Cannon",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 30,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Gunpowder",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Caravel",
+		"unitType": "Melee Water",
+		"movement": 5,
+		"strength": 30,
+		"cost": 120,
+		"requiredTech": "Physics",
+		"upgradesTo": "Frigate",
+		"obsoleteTech": "Plastics",
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Musketman",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 45,
+		"cost": 112,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Infantry",
+		"obsoleteTech": "Industrialization",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Frigate",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 40,
+		"cost": 150,
+		"requiredTech": "Economics",
+		"obsoleteTech": "Combustion",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 20,
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Cannon",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 30,
+		"cost": 150,
+		"requiredTech": "Chemistry",
+		"upgradesTo": "Artillery",
+		"obsoleteTech": "Combustion",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus"],
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Cavalry",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 45,
+		"cost": 150,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Helicopter Gunship",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Artillery",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 3,
+		"cost": 300,
+		"requiredTech": "Combined Arms",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+      "No defensive terrain bonus"
+			],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Submarine",
+		"unitType": "Submarine",
+		"movement": 8,
+		"strength": 40,
+		"cost": 325,
+      "upgradesTo": "Missile Cruiser",
+		"requiredTech": "Electricity",
+		"uniques": ["[+20]% Strength <when attacking>", "Can only attack [Water] tiles", "Can move after attacking"],
+		"attackSound": "torpedo"
+	},
+	{
+		"name": "Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 65,
+		"cost": 225,
+		"requiredTech": "Industrialization",
+		"upgradesTo": "Mechanized Infantry",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 6,
+		"strength": 45,
+		"cost": 450,
+		"requiredTech": "Electronics",
+		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
+	},
+	{
+		"name": "Battleship",
+		"unitType": "Ranged Water",
+		"movement": 6,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 2,
+		"cost": 425,
+      "upgradesTo": "Missile Cruiser",
+		"requiredTech": "Combustion",
+		"uniques": ["Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Anti-Aircraft Gun",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"interceptRange": 2,
+		"strength": 75,
+		"cost": 225,
+		"requiredTech": "Flight",
+		"uniques": ["[100]% chance to intercept air attacks", 
+      "[+100]% Strength <vs [Air] units>", 
+      "[+100]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 10,
+		"interceptRange": 10,
+		"cost": 350,
+		"requiredTech": "Flight",
+		"uniques": ["[100]% chance to intercept air attacks", "[+50]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Tank",
+		"unitType": "Armored",
+		"movement": 3,
+		"strength": 110,
+		"cost": 450,
+		"requiredTech": "Automobile",
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 10,
+		"cost": 700,
+		"requiredTech": "Nuclear Fission",
+		"promotions" : ["Evasion"],
+		"uniques": ["Nuclear weapon of Strength [1]", 
+      "Only available <if [Manhattan Project] is constructed>", 
+      "Self-destructs when attacking",
+			"Blast radius [2]"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Guided Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 8,
+		"cost": 120,
+		"requiredTech": "Rocketry",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Helicopter Gunship",
+		"unitType": "Helicopter",
+		"movement": 5,
+		"strength": 75,
+		"cost": 325,
+		"requiredTech": "Electronics",
+		"uniques": [
+      "[+100]% Strength <vs [Armored] units>", 
+      "No defensive terrain bonus", 
+      "Can move after attacking",
+      "All tiles cost 1 movement", 
+      "Ignores Zone of Control", 
+      "Unable to capture cities"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Mechanized Infantry",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 90,
+		"cost": 300,
+		"requiredTech": "Combined Arms",
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Missile Cruiser",
+		"unitType": "Ranged Water",
+		"movement": 8,
+		"strength": 70,
+		"rangedStrength": 70,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 700,
+		"requiredTech": "Rocketry",
+		"uniques": [
+      "[100]% chance to intercept air attacks", 
+      "Can see invisible [Submarine] units",
+      "Can carry [2] [Missile] units", 
+      "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Giant Death Robot",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 140,
+		"cost": 700,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["Can move after attacking", 
+      "No defensive terrain bonus", 
+      "Never appears as a Barbarian unit"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": ["Can construct [Landmark]", "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",
+		"unitType": "Civilian",
+		"uniques": ["Can construct [Academy]", "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": ["Can construct [Customs house]", "Great Person - [Gold]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": ["Can construct [Manufactory]", "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": ["[+15]% Strength bonus for [Military] units within [2] tiles",
+			"Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "SS Booster",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Rocketry",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [3] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Cockpit",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Artificial Intelligence",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Engine",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	},
+	{
+		"name": "SS Stasis Chamber",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 750,
+		"requiredTech": "Space Flight",
+		"uniques": ["Spaceship part", "Cannot be purchased", "Only available <if [Apollo Program] is constructed>", "Uncapturable", "Can be added to [The Spaceship] in the Capital", "Limited to [1] per Civilization"]
+		// costs 1500 in BNW
+	}
+]
