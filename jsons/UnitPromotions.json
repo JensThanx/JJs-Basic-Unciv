@@ -83,7 +83,7 @@
       "prerequisites": [],
 		"uniques": ["[+33]% Strength <vs [Air] units>"],
 		"unitTypes": ["Gunpowder", "Armored"],
-        "column": 26,
+        "column": 23,
         "row": 1
 	},
 	{
