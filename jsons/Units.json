@@ -210,7 +210,7 @@
 		"cost": 150,
 		"requiredTech": "Chemistry",
 		"upgradesTo": "Artillery",
-		"obsoleteTech": "Combustion",
+		"obsoleteTech": "Combined Arms",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus"],
 		"attackSound": "cannon"
 	},
