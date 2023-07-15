@@ -1,5 +1,5 @@
 # JJs Basic UNCIV
-Mod for the brilliant UNCIV game. Full ruleset. Focus on reduced complexity.
+Mod for the brilliant UNCIV game. Full ruleset. Focus on reduced complexity. Compatible at least with UNCIV 4.8.5p1.
 
 Features (compared to normal UNCIV)
  * no religion
